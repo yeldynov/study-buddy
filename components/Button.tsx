@@ -1,5 +1,5 @@
-import { ButtonProps } from '@/types';
-import React from 'react';
+import { ButtonProps } from "@/types.common";
+import React from "react";
 
 const Button = ({
   title,
@@ -8,7 +8,7 @@ const Button = ({
   handleClick,
 }: ButtonProps) => {
   return (
-    <div className='w-full'>
+    <div className="w-full">
       <button
         className={`custom-btn bg-[#1785B3] rounded-xl text-white font-bold ${containerStyles}`}
         onClick={handleClick}
