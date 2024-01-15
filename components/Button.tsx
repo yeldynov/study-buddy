@@ -8,7 +8,7 @@ const Button = ({
   handleClick,
 }: ButtonProps) => {
   return (
-    <div className="w-full">
+    <div>
       <button
         className={`custom-btn bg-[#1785B3] rounded-xl text-white font-bold ${containerStyles}`}
         onClick={handleClick}
