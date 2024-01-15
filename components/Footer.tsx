@@ -21,18 +21,18 @@ const Footer = () => {
           </div>
           <div className='flex flex-col mt-6 p-2 bg-[#E8E8E8]'>
             <h3>Контакти</h3>
-            <p className='flex gap-2 mb-1 text-xs items-center'>
+            <div className='flex gap-2 mb-1 text-xs items-center'>
               <div className='bg-[#b6b6b6] w-[14px] h-[14px] rounded-full'></div>
               +380 99 321 47 89
-            </p>
-            <p className='flex gap-2 mb-1 text-xs items-center'>
+            </div>
+            <div className='flex gap-2 mb-1 text-xs items-center'>
               <div className='bg-[#b6b6b6] w-[14px] h-[14px] rounded-full'></div>
               +380 99 321 47 89
-            </p>
-            <p className='flex gap-2 mb-1 text-xs items-center'>
+            </div>
+            <div className='flex gap-2 mb-1 text-xs items-center'>
               <div className='bg-[#b6b6b6] w-[14px] h-[14px] rounded-full'></div>
               studybdy@gmail.com
-            </p>
+            </div>
           </div>
         </div>
         <div className='font-[500] text-[15px]'>
