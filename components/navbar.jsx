@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className='flex lg:hidden'>
           <button
             type='button'
-            className='-m-2.5 inline-flex absolute top-[28px] right-6 items-center justify-center rounded-md p-2.5 text-gray-700'
+            className='-m-2.5 inline-flex absolute top-[28px] right-3 items-center justify-center rounded-md p-2.5 text-gray-700'
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className='sr-only'>Open main menu</span>
@@ -30,10 +30,10 @@ export default function Navbar() {
           {/* Navlinks */}
 
           <Link
-            href='/about'
+            href='/'
             className={`${
-              pathname === '/about' ? 'bg-[#FCCF8D] text-black' : ''
-            } text-lg text-[#818181] font-ibmplex hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
+              pathname === '/' ? 'bg-[#FCCF8D] text-black' : ''
+            } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6`}
           >
             Про Школу
           </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
             href='/courses'
             className={`${
               pathname === '/courses' ? 'bg-[#FCCF8D] text-black' : ''
-            } text-lg text-[#818181] font-ibmplex hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
+            } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6`}
           >
             Курси
           </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
             href='/testimonials'
             className={`${
               pathname === '/testimonials' ? 'bg-[#FCCF8D] text-black' : ''
-            } text-lg text-[#818181] font-ibmplex hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
+            } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Відгуки студентів
           </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
             href='/faq'
             className={`${
               pathname === '/faq' ? 'bg-[#FCCF8D] text-black' : ''
-            } text-lg text-[#818181] font-ibmplex hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
+            } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Часті питання
           </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
             href='/testing'
             className={`${
               pathname === '/testing' ? 'bg-[#FCCF8D] text-black' : ''
-            } text-lg text-[#818181] font-ibmplex hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
+            } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Тестування
           </Link>
@@ -73,10 +73,10 @@ export default function Navbar() {
             href='/subscribe'
             className={` ${
               pathname === '/subscribe' ? 'bg-[#FCCF8D] text-black' : ''
-            } flex gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181] font-ibmplex leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black `}
+            } flex gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black `}
           >
             <span aria-hidden='true'>
-              <img className='h-6 w-6 ' src='/icon_pen.svg' alt='' />
+              <img className='h-6 w-6 ' src='/icons/icon_pen.svg' alt='' />
             </span>
             Записатися на урок
           </Link>
