@@ -1,7 +1,210 @@
 import React from 'react'
 
 const FAQ = () => {
-  return <div>FAQ</div>
+  return (
+    <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
+      <h2 className='font-lora text-3xl font-medium'>Часті Питання</h2>
+      <div className='m-2 space-y-5'>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={1}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити?
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Так! Спеціально розроблений курс для тих хто володіє базовими
+            знаннями тa хоче підвищити свій рівень комунікації, влаштуватися в
+            іноземну компанію, працювати з іноземними клієнтами. Спеціально
+            розроблений курс для тих хто володіє базовими знаннями тa хоче
+            підвищити свій рівень комунікації, влаштуватися в іноземну компанію,
+            працювати з іноземними клієнтами. Спеціально розроблений курс для
+            тих хто володіє базовими знаннями тa хоче підвищити свій рівень
+            комунікації, влаштуватися в іноземну компанію, працювати з
+            іноземними клієнтами. Так! Спеціально розроблений курс для тих хто
+            володіє базовими знаннями тa хоче підвищити свій рівень комунікації,
+            влаштуватися в іноземну компанію, працювати з іноземними клієнтами.
+            Спеціально розроблений курс для тих хто володіє базовими знаннями тa
+            хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+            компанію, працювати з іноземними клієнтами. Спеціально розроблений
+            курс для тих хто володіє базовими знаннями тa хоче підвищити свій
+            рівень комунікації, влаштуватися в іноземну компанію, працювати з
+            іноземними клієнтами.
+          </div>
+        </div>
+
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={2}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={3}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={4}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={5}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={6}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={7}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div
+          className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
+          tabIndex={8}
+        >
+          <div className='flex cursor-pointer items-center justify-between'>
+            <span className='font-semibold pr-2'>
+              {' '}
+              Спеціально розроблений курс для тих хто володіє базовими знаннями
+              тa хоче підвищити свій рівень комунікації, влаштуватися в іноземну
+              компанію, працювати з іноземними клієнтами?{' '}
+            </span>
+            <img
+              src='icons/icon_player_up-40px.svg'
+              className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
+            />
+          </div>
+          <div className='invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 pr-10'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default FAQ

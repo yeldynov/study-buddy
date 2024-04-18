@@ -41,7 +41,7 @@ const About = () => {
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 '>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -100,7 +100,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -159,7 +159,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -218,7 +218,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -277,7 +277,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -336,7 +336,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -395,7 +395,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
@@ -454,7 +454,7 @@ const About = () => {
             </div>
           </div>
           {/* COACH CARD */}
-          <div className='flex flex-col lg:flex-row p-2.5 bg-[#FFE4BB4D]'>
+          <div className='flex flex-col lg:flex-row p-2.5 bg-background'>
             <img
               className='object-cover w-full'
               src='/сoach.png'
