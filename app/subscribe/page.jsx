@@ -1,6 +1,43 @@
+'use client'
+
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 import Link from 'next/link'
 
 const Subscribe = () => {
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setError(false)
+    setSuccess(false)
+
+    console.log('sending form...')
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          setSuccess(true)
+          form.current.reset()
+        },
+        (error) => {
+          setError(true)
+          console.log(error)
+        }
+      )
+  }
+
   return (
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
       <h2 className='font-lora underline-offset-8 text-3xl font-medium '>
@@ -14,33 +51,49 @@ const Subscribe = () => {
         </div>
         {/* right */}
         <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
-          <form className='flex flex-col lg:gap-8 gap-4 py-6' action=''>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className='flex flex-col lg:gap-8 gap-4 py-6'
+          >
             <input
               className='h-10 w-full max-w-[350px] p-2 rounded-md'
               type='text'
               placeholder="Ім'я"
+              name='user_name'
             />
             <input
               className='h-10 max-w-[350px] p-2 rounded-md'
               type='text'
               placeholder='Телефон'
+              name='user_phone'
             />
             <input
               className='h-10 max-w-[350px] p-2 rounded-md'
               type='email'
               placeholder='E-mail'
+              name='user_email'
             />
-            <button></button>
+            <button
+              type='submit'
+              className='flex bg-white gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black w-fit ;lg:ml-auto mx-auto lg:mr-5'
+            >
+              <span aria-hidden='true'>
+                <img className='h-6 w-6 ' src='/icons/icon_pen.svg' alt='' />
+              </span>
+              Записатися на урок
+            </button>
+            {success && (
+              <span className='text-green-600 font-semibold'>
+                Ваше повідомлення відправлено, очікуйте дзвінок.
+              </span>
+            )}
+            {error && (
+              <span className='text-red-600 font-semibold'>
+                Щось пішло не так, спробуйте знову.
+              </span>
+            )}
           </form>
-          <Link
-            href='/subscribe'
-            className='flex bg-white gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black w-fit ;lg:ml-auto mx-auto lg:mr-5'
-          >
-            <span aria-hidden='true'>
-              <img className='h-6 w-6 ' src='/icons/icon_pen.svg' alt='' />
-            </span>
-            Записатися на урок
-          </Link>
         </div>
       </div>
 
