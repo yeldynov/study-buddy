@@ -24,7 +24,7 @@ const Courses = () => {
         <motion.div
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.2 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
