@@ -7,14 +7,9 @@ const Testimonials = () => {
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
       {/* TOP */}
       <motion.div
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.2 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
       >
         <motion.h2
           initial='hidden'

@@ -15,7 +15,7 @@ const Courses = () => {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className='font-lora text-2xl lg:text-3xl font-medium mb-[26px]'
+        className='font-lora text-3xl font-medium mb-[26px]'
       >
         Курси та програми
       </motion.h2>

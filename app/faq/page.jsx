@@ -6,15 +6,10 @@ const FAQ = () => {
   return (
     <div className='p-0 lg:p-20 flex flex-col gap-10'>
       <motion.h2
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ once: true }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
-        className='px-6 font-lora text-2xl lg:text-3xl font-medium mb-[26px]'
+        className='px-6 font-lora text-3xl font-medium  '
       >
         Часті Питання
       </motion.h2>

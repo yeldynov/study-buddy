@@ -174,6 +174,7 @@ export default function Navbar() {
                   </div>
                   <div className='py-6'>
                     <Link
+                      onClick={() => setIsOpen(false)}
                       href='/subscribe'
                       className={` ${
                         pathname === '/subscribe'
