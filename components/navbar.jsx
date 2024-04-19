@@ -175,9 +175,20 @@ export default function Navbar() {
                   <div className='py-6'>
                     <Link
                       href='/subscribe'
-                      className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      className={` ${
+                        pathname === '/subscribe'
+                          ? 'bg-[#FCCF8D] text-black'
+                          : ''
+                      } flex gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black `}
                     >
-                      <span aria-hidden='true'>&rarr;</span> Записатися на урок
+                      <span aria-hidden='true'>
+                        <img
+                          className='h-6 w-6 '
+                          src='/icons/icon_pen.svg'
+                          alt=''
+                        />
+                      </span>
+                      Записатися на урок
                     </Link>
                   </div>
                 </div>
