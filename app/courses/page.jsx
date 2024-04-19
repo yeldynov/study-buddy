@@ -1,14 +1,37 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const Courses = () => {
   return (
     <div className='p-6 lg:p-20 flex flex-col'>
-      <h1 className='font-lora text-2xl lg:text-3xl font-medium mb-[26px]'>
+      <motion.h2
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='font-lora text-2xl lg:text-3xl font-medium mb-[26px]'
+      >
         Курси та програми
-      </h1>
+      </motion.h2>
       <div className='flex flex-col gap-8'>
         {/* COURSE CARD */}
-        <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+        >
           {/* left */}
           <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
@@ -74,9 +97,19 @@ const Courses = () => {
           <div className='flex-1 self-end mb-3'>
             <img src='courses/courses-0.png' alt='Study Buddy Course' />
           </div>
-        </div>
+        </motion.div>
         {/* COURSE CARD */}
-        <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+        >
           {/* left */}
           <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
@@ -142,9 +175,19 @@ const Courses = () => {
           <div className='flex-1 self-end mb-3'>
             <img src='courses/courses-1.png' alt='Study Buddy Course' />
           </div>
-        </div>
+        </motion.div>
         {/* COURSE CARD */}
-        <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+        >
           {/* left */}
           <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
@@ -210,9 +253,19 @@ const Courses = () => {
           <div className='flex-1 self-end mb-3'>
             <img src='courses/courses-2.png' alt='Study Buddy Course' />
           </div>
-        </div>
+        </motion.div>
         {/* COURSE CARD */}
-        <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+        >
           {/* left */}
           <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
@@ -278,9 +331,19 @@ const Courses = () => {
           <div className='flex-1 self-end mb-3'>
             <img src='courses/courses-3.png' alt='Study Buddy Course' />
           </div>
-        </div>
+        </motion.div>
         {/* COURSE CARD */}
-        <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+        >
           {/* left */}
           <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
@@ -346,7 +409,7 @@ const Courses = () => {
           <div className='flex-1 self-end mb-3'>
             <img src='courses/courses-4.png' alt='Study Buddy Course' />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

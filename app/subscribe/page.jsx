@@ -1,5 +1,7 @@
 'use client'
 
+import { motion } from 'framer-motion'
+
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Link from 'next/link'
@@ -40,11 +42,31 @@ const Subscribe = () => {
 
   return (
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
-      <h2 className='font-lora underline-offset-8 text-3xl font-medium '>
+      <motion.h2
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='font-lora underline-offset-8 text-3xl font-medium '
+      >
         Записатися на безкоштовний перший урок
-      </h2>
+      </motion.h2>
       {/* TOP CARD */}
-      <div className='flex flex-col lg:flex-row w-full lg:px-40 px-3 py-8 bg-background'>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='flex flex-col lg:flex-row w-full lg:px-40 px-3 py-8 bg-background'
+      >
         {/* left */}
         <div className='flex-1 self-center'>
           <img src='girl.png' alt='Lusty Girl' />
@@ -95,10 +117,20 @@ const Subscribe = () => {
             )}
           </form>
         </div>
-      </div>
+      </motion.div>
 
       {/* BOTTOM CARD */}
-      <div className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
+      >
         {/* left */}
         <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
           <h2 className='font-lora text-2xl font-semibold mb-3'>Тестування</h2>
@@ -162,7 +194,7 @@ const Subscribe = () => {
         <div className='flex-1 self-end mb-3'>
           <img src='testing.png' alt='Study Buddy Course' />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

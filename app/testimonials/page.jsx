@@ -1,13 +1,35 @@
-import React from 'react'
+'use client'
+
+import { motion } from 'framer-motion'
 
 const Testimonials = () => {
   return (
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
       {/* TOP */}
-      <div className=''>
-        <h2 className='font-lora text-3xl font-medium mb-[26px]'>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className=''
+      >
+        <motion.h2
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className='font-lora text-3xl font-medium mb-[26px]'
+        >
           Про наших студентів
-        </h2>
+        </motion.h2>
         <p className=' leading-[20.8px]'>
           Ми використовуємо методи, що використовуються в школах Кембриджу та
           Оксворду. Цей підхід здатен змінити все. Ми використовуємо методи, що
@@ -21,7 +43,7 @@ const Testimonials = () => {
           Ми використовуємо методи, більше про нагороди...
           <span className='text-[#818181]'>читати</span>
         </p>
-      </div>
+      </motion.div>
       {/* TESTIMONIALS */}
       <div>
         <h2 className='font-lora text-3xl font-medium mb-[26px]'>
@@ -69,7 +91,17 @@ const Testimonials = () => {
             </div>
           </div>
           {/* CARD */}
-          <div className='col-span-2 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className='col-span-2 bg-background'
+          >
             <div className='flex p-3'>
               <div className='flex-1 mr-4'>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
@@ -99,9 +131,19 @@ const Testimonials = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-start-2 row-start-2 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='col-start-2 row-start-2 bg-background'
+          >
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <iframe
@@ -116,9 +158,19 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-start-3 row-start-2 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='col-start-3 row-start-2 bg-background'
+          >
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <img
@@ -133,9 +185,19 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='row-start-3 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='row-start-3 bg-background'
+          >
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <iframe
@@ -150,9 +212,19 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='row-start-3 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='row-start-3 bg-background'
+          >
             {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -168,9 +240,19 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-span-2 col-start-1 row-start-4 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className='col-span-2 col-start-1 row-start-4 bg-background'
+          >
             {' '}
             <div className='flex p-3'>
               <div className='flex-1 mr-4'>
@@ -206,9 +288,19 @@ const Testimonials = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='row-span-2 col-start-3 row-start-3 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className='row-span-2 col-start-3 row-start-3 bg-background'
+          >
             {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -244,9 +336,19 @@ const Testimonials = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='row-span-2 row-start-5 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className='row-span-2 row-start-5 bg-background'
+          >
             {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -282,9 +384,19 @@ const Testimonials = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-span-2 row-start-5 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className='col-span-2 row-start-5 bg-background'
+          >
             {' '}
             <div className='flex p-3'>
               <div className='flex-1 mr-4'>
@@ -315,9 +427,19 @@ const Testimonials = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-start-2 row-start-6 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='col-start-2 row-start-6 bg-background'
+          >
             {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -333,9 +455,19 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* CARD */}
-          <div className='col-start-3 row-start-6 bg-background'>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className='col-start-3 row-start-6 bg-background'
+          >
             {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -351,7 +483,7 @@ const Testimonials = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* TODO: This is testimonials on mobile screens

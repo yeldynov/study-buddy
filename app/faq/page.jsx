@@ -1,10 +1,34 @@
-import React from 'react'
+'use client'
+
+import { motion } from 'framer-motion'
 
 const FAQ = () => {
   return (
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
-      <h2 className='font-lora text-3xl font-medium'>Часті Питання</h2>
-      <div className='m-2 space-y-5'>
+      <motion.h2
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='font-lora text-3xl font-medium'
+      >
+        Часті Питання
+      </motion.h2>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+        transition={{ duration: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className='m-2 space-y-5'
+      >
         <div
           className='group flex flex-col gap-2 rounded-lg bg-background p-5 text-black'
           tabIndex={1}
@@ -202,7 +226,7 @@ const FAQ = () => {
             aliquip ex ea commodo consequat.
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
