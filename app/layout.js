@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className='font-ibmplex'>
+      <body className='font-ibmplex scroll-smooth'>
         <Header />
         {children}
         <Footer />

@@ -17,7 +17,7 @@ const Header = () => {
           <img
             src='hero-image.png'
             alt=''
-            className='self-center px-5 lg:px-0 lg:m-[92px] lg:ml-[236px] lg:mr-[273px] lg:mb-[106px] object-contain'
+            className='self-center px-5 lg:px-0 lg:m-[92px] xl:ml-[236px] lg:mr-[273px] lg:mb-[106px] object-contain'
           />
         </Link>
       </div>

@@ -15,7 +15,6 @@ const Testimonials = () => {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className=''
       >
         <motion.h2
           initial='hidden'
@@ -50,10 +49,9 @@ const Testimonials = () => {
           Відгуки студентів
         </h2>
 
-        {/* GRID */}
-
-        <div className='grid grid-cols-3 grid-rows-6 gap-5'>
-          {/* CARD */}
+        {/* GRID 1 */}
+        <div className='flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-6 lg:gap-10 gap-5'>
+          {/* CARD 1 */}
           <div className='row-span-2 bg-background'>
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
@@ -63,7 +61,7 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
@@ -90,7 +88,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* CARD */}
+          {/* CARD 2 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -102,7 +100,7 @@ const Testimonials = () => {
             }}
             className='col-span-2 bg-background'
           >
-            <div className='flex p-3'>
+            <div className='flex lg:flex-row flex-col-reverse p-3'>
               <div className='flex-1 mr-4'>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
@@ -132,7 +130,7 @@ const Testimonials = () => {
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 3 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -152,14 +150,14 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 4 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -179,14 +177,14 @@ const Testimonials = () => {
                   alt=''
                 />
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 5 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -206,14 +204,14 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 6 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -225,7 +223,6 @@ const Testimonials = () => {
             }}
             className='row-start-3 bg-background'
           >
-            {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <img
@@ -234,14 +231,14 @@ const Testimonials = () => {
                   alt=''
                 />
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 7 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -253,8 +250,7 @@ const Testimonials = () => {
             }}
             className='col-span-2 col-start-1 row-start-4 bg-background'
           >
-            {' '}
-            <div className='flex p-3'>
+            <div className='flex lg:flex-row flex-col-reverse p-3'>
               <div className='flex-1 mr-4'>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
@@ -289,7 +285,7 @@ const Testimonials = () => {
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 8 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -301,7 +297,6 @@ const Testimonials = () => {
             }}
             className='row-span-2 col-start-3 row-start-3 bg-background'
           >
-            {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <iframe
@@ -310,7 +305,7 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
@@ -337,7 +332,7 @@ const Testimonials = () => {
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 9 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -349,7 +344,6 @@ const Testimonials = () => {
             }}
             className='row-span-2 row-start-5 bg-background'
           >
-            {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <iframe
@@ -358,7 +352,7 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
@@ -385,7 +379,7 @@ const Testimonials = () => {
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 10 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -397,8 +391,7 @@ const Testimonials = () => {
             }}
             className='col-span-2 row-start-5 bg-background'
           >
-            {' '}
-            <div className='flex p-3'>
+            <div className='flex lg:flex-row flex-col-reverse p-3'>
               <div className='flex-1 mr-4'>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
@@ -428,7 +421,7 @@ const Testimonials = () => {
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 11 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -440,7 +433,6 @@ const Testimonials = () => {
             }}
             className='col-start-2 row-start-6 bg-background'
           >
-            {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <iframe
@@ -449,14 +441,14 @@ const Testimonials = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
               </div>
             </div>
           </motion.div>
-          {/* CARD */}
+          {/* CARD 12 */}
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -468,7 +460,6 @@ const Testimonials = () => {
             }}
             className='col-start-3 row-start-6 bg-background'
           >
-            {' '}
             <div className='flex flex-col w-full p-3 '>
               <div className='aspect-w-3 aspect-h-4'>
                 <img
@@ -477,7 +468,7 @@ const Testimonials = () => {
                   alt=''
                 />
               </div>
-              <div className=''>
+              <div>
                 <h2 className='text-xl font-semibold my-1 p-2 text-center'>
                   Ганна, маркетолог
                 </h2>
@@ -485,24 +476,6 @@ const Testimonials = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* TODO: This is testimonials on mobile screens
-         * Need to be hidden on large screens and shown on small, and vice versa.
-         */}
-        {/* <div className='border grid grid-cols-1 grid-rows-12 gap-0'>
-          <div className='border col-span-1 row-span-1'>1</div>
-          <div className='border col-span-1 row-span-1'>2</div>
-          <div className='border col-span-1 row-span-1'>3</div>
-          <div className='border col-span-1 row-span-1'>4</div>
-          <div className='border col-span-1 row-span-1'>5</div>
-          <div className='border col-span-1 row-span-1'>6</div>
-          <div className='border col-span-1 row-span-1'>7</div>
-          <div className='border col-span-1 row-span-1'>8</div>
-          <div className='border col-span-1 row-span-1'>9</div>
-          <div className='border col-span-1 row-span-1'>10</div>
-          <div className='border col-span-1 row-span-1'>11</div>
-          <div className='border col-span-1 row-span-1'>12</div>
-        </div> */}
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 '>
           {/* STUDENT CARD */}

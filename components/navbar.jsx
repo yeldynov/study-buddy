@@ -5,10 +5,30 @@ import { Dialog, Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
+
+  const navContainer = {
+    visible: {
+      //x: 0,
+      opacity: 1,
+      transition: {
+        x: { velocity: 100 },
+        duration: 0.3,
+      },
+    },
+    hidden: {
+      //x: -250,
+      opacity: 0,
+      transition: {
+        x: { velocity: 100 },
+        duration: 0.3,
+      },
+    },
+  }
 
   return (
     <header className='bg-white'>
@@ -84,75 +104,88 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Nav  */}
-
-      <Dialog as='div' className='lg:hidden' open={isOpen} onClose={setIsOpen}>
-        <div className='fixed inset-0 z-10' />
-        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
-          <div className='flex items-center justify-between'>
-            <Link href='#' className='-m-1.5 p-1.5'>
-              <span className='sr-only'>Study Buddy</span>
-              <img className='h-8 w-auto' src='/logo.png' alt='' />
-            </Link>
-            <button
-              type='button'
-              className='-m-2.5 rounded-md p-2.5 text-gray-700'
-              onClick={() => setIsOpen(false)}
-            >
-              <span className='sr-only'>Close menu</span>
-              <XMarkIcon className='h-6 w-6' aria-hidden='true' />
-            </button>
-          </div>
-          <div className='mt-6 flow-root'>
-            <div className='-my-6 divide-y divide-gray-500/10'>
-              <div className='space-y-2 py-6'>
-                <Link
-                  href='/about'
-                  className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+      <AnimatePresence>
+        <Dialog
+          as='div'
+          className='lg:hidden'
+          open={isOpen}
+          onClose={setIsOpen}
+        >
+          <motion.div
+            initial='hidden'
+            animate={isOpen ? 'visible' : 'hidden'}
+            exit='hidden'
+            variants={navContainer}
+          >
+            <div className='fixed inset-0 z-10' />
+            <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+              <div className='flex items-center justify-between'>
+                <Link href='#' className='-m-1.5 p-1.5'>
+                  <span className='sr-only'>Study Buddy</span>
+                  <img className='h-8 w-auto' src='/logo.png' alt='' />
+                </Link>
+                <button
+                  type='button'
+                  className='-m-2.5 rounded-md p-2.5 text-gray-700'
                   onClick={() => setIsOpen(false)}
                 >
-                  Про Школу
-                </Link>
-                <Link
-                  href='/courses'
-                  className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                  onClick={() => setIsOpen(false)}
-                >
-                  Курси
-                </Link>
-                <Link
-                  href='/testimonials'
-                  className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                  onClick={() => setIsOpen(false)}
-                >
-                  Відгуки студентів
-                </Link>
-                <Link
-                  href='/faq'
-                  className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                  onClick={() => setIsOpen(false)}
-                >
-                  Часті Питання
-                </Link>
-                <Link
-                  href='/testing'
-                  className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                  onClick={() => setIsOpen(false)}
-                >
-                  Тестування
-                </Link>
+                  <span className='sr-only'>Close menu</span>
+                  <XMarkIcon className='h-6 w-6' aria-hidden='true' />
+                </button>
               </div>
-              <div className='py-6'>
-                <Link
-                  href='/subscribe'
-                  className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
-                >
-                  <span aria-hidden='true'>&rarr;</span> Записатися на урок
-                </Link>
+              <div className='mt-6 flow-root'>
+                <div className='-my-6 divide-y divide-gray-500/10'>
+                  <div className='space-y-2 py-6'>
+                    <Link
+                      href='/about'
+                      className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Про Школу
+                    </Link>
+                    <Link
+                      href='/courses'
+                      className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Курси
+                    </Link>
+                    <Link
+                      href='/testimonials'
+                      className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Відгуки студентів
+                    </Link>
+                    <Link
+                      href='/faq'
+                      className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Часті Питання
+                    </Link>
+                    <Link
+                      href='/testing'
+                      className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Тестування
+                    </Link>
+                  </div>
+                  <div className='py-6'>
+                    <Link
+                      href='/subscribe'
+                      className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                    >
+                      <span aria-hidden='true'>&rarr;</span> Записатися на урок
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </Dialog.Panel>
-      </Dialog>
+            </Dialog.Panel>
+          </motion.div>
+        </Dialog>
+      </AnimatePresence>
     </header>
   )
 }

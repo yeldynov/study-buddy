@@ -5,10 +5,12 @@ import { motion } from 'framer-motion'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const Subscribe = () => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
+  const router = useRouter()
 
   const form = useRef()
 
@@ -17,7 +19,21 @@ const Subscribe = () => {
     setError(false)
     setSuccess(false)
 
-    console.log('sending form...')
+    const formData = new FormData(form.current)
+    const data = {}
+    let hasError = false
+
+    formData.forEach((value, key) => {
+      if (!value) {
+        hasError = true
+      }
+      data[key] = value
+    })
+
+    if (hasError) {
+      setError(true)
+      return
+    }
 
     emailjs
       .sendForm(
@@ -32,6 +48,9 @@ const Subscribe = () => {
         () => {
           setSuccess(true)
           form.current.reset()
+          setTimeout(() => {
+            router.push('/')
+          }, 5000)
         },
         (error) => {
           setError(true)
@@ -51,7 +70,7 @@ const Subscribe = () => {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className='font-lora underline-offset-8 text-3xl font-medium '
+        className='font-lora text-2xl lg:text-3xl font-medium mb-[26px]'
       >
         Записатися на безкоштовний перший урок
       </motion.h2>
@@ -76,29 +95,32 @@ const Subscribe = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className='flex flex-col lg:gap-8 gap-4 py-6'
+            className='flex flex-col items-center lg:gap-8 gap-4 pt-6 pb-1'
           >
             <input
-              className='h-10 w-full max-w-[350px] p-2 rounded-md'
+              className='h-10 w-full lg:w-[350px] p-2 rounded-md'
               type='text'
               placeholder="Ім'я"
               name='user_name'
+              onChange={() => setError(false)}
             />
             <input
-              className='h-10 max-w-[350px] p-2 rounded-md'
+              className='h-10 w-full lg:w-[350px] p-2 rounded-md'
               type='text'
               placeholder='Телефон'
               name='user_phone'
+              onChange={() => setError(false)}
             />
             <input
-              className='h-10 max-w-[350px] p-2 rounded-md'
+              className='h-10 w-full lg:w-[350px] p-2 rounded-md'
               type='email'
               placeholder='E-mail'
               name='user_email'
+              onChange={() => setError(false)}
             />
             <button
               type='submit'
-              className='flex bg-white gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black w-fit ;lg:ml-auto mx-auto lg:mr-5'
+              className='flex bg-white gap-2 h-6 p-5 mt-4 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black w-fit lg:ml-auto mx-auto'
             >
               <span aria-hidden='true'>
                 <img className='h-6 w-6 ' src='/icons/icon_pen.svg' alt='' />
@@ -107,7 +129,8 @@ const Subscribe = () => {
             </button>
             {success && (
               <span className='text-green-600 font-semibold'>
-                Ваше повідомлення відправлено, очікуйте дзвінок.
+                Ваше повідомлення відправлено. Ви будете перенаправлені на
+                головну сторінку...
               </span>
             )}
             {error && (

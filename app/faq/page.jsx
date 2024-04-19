@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const FAQ = () => {
   return (
-    <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
+    <div className='p-0 lg:p-20 flex flex-col gap-10'>
       <motion.h2
         initial='hidden'
         whileInView='visible'
@@ -14,7 +14,7 @@ const FAQ = () => {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className='font-lora text-3xl font-medium'
+        className='px-6 font-lora text-2xl lg:text-3xl font-medium mb-[26px]'
       >
         Часті Питання
       </motion.h2>
