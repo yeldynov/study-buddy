@@ -94,37 +94,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -166,37 +166,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -238,37 +238,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -310,37 +310,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -382,37 +382,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -454,37 +454,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -526,37 +526,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”
@@ -598,37 +598,37 @@ const About = () => {
               </div>
               {/* skills */}
               <div className='flex flex-col gap-5 p-2.5'>
-                <div className='flex lg:flex-col'>
+                <div className='flex lg:flex-col gap-5'>
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Сертифікат
                       BAFTHS вищого ступеня
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_medal.svg' alt='' /> Досвід 10 років
                     </p>
                   </div>
 
                   <div className='flex flex-col gap-2.5'>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />
                       індивідуальні заняття
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' /> для
                       спеціалістів
                     </p>
-                    <p className='flex gap-2 text-[10px]'>
+                    <p className='flex gap-2 text-[10px] 2xl:text-[12px]'>
                       <img src='/icons/icon_checkmark-12px.svg' alt='' />{' '}
                       коучинг
                     </p>
                   </div>
                 </div>
 
-                <div className='italic text-[10px] w-3/4'>
+                <div className='italic text-[10px] 2xl:text-[12px] w-3/4'>
                   “Ми використовуємо методи, що використовуються в школах
                   Кембриджу та Ми використовуємо методи, що використовуються в
                   школах.”

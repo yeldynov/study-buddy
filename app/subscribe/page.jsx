@@ -155,7 +155,7 @@ const Subscribe = () => {
         className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
       >
         {/* left */}
-        <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+        <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
           <h2 className='font-lora text-2xl font-semibold mb-3'>Тестування</h2>
           <p className='text-sm leading-[110%]'>
             Ви можете пройти тестуваннякурс для тих хто володіє базовими
@@ -215,7 +215,11 @@ const Subscribe = () => {
         </div>
         {/* right */}
         <div className='flex-1 self-end mb-3'>
-          <img src='testing.png' alt='Study Buddy Course' />
+          <img
+            src='testing.png'
+            alt='Study Buddy Course'
+            className='object-cover w-full'
+          />
         </div>
       </motion.div>
     </div>

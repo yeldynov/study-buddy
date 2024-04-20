@@ -33,7 +33,7 @@ const Courses = () => {
           className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
         >
           {/* left */}
-          <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+          <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
               Business English
             </h2>
@@ -95,7 +95,11 @@ const Courses = () => {
           </div>
           {/* right */}
           <div className='flex-1 self-end mb-3'>
-            <img src='courses/courses-0.png' alt='Study Buddy Course' />
+            <img
+              src='courses/courses-0.png'
+              alt='Study Buddy Course'
+              className='object-cover w-full'
+            />
           </div>
         </motion.div>
         {/* COURSE CARD */}
@@ -111,7 +115,7 @@ const Courses = () => {
           className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
         >
           {/* left */}
-          <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+          <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
               Business English
             </h2>
@@ -173,7 +177,11 @@ const Courses = () => {
           </div>
           {/* right */}
           <div className='flex-1 self-end mb-3'>
-            <img src='courses/courses-1.png' alt='Study Buddy Course' />
+            <img
+              src='courses/courses-1.png'
+              alt='Study Buddy Course'
+              className='object-cover w-full'
+            />
           </div>
         </motion.div>
         {/* COURSE CARD */}
@@ -189,7 +197,7 @@ const Courses = () => {
           className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
         >
           {/* left */}
-          <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+          <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
               Business English
             </h2>
@@ -251,7 +259,11 @@ const Courses = () => {
           </div>
           {/* right */}
           <div className='flex-1 self-end mb-3'>
-            <img src='courses/courses-2.png' alt='Study Buddy Course' />
+            <img
+              src='courses/courses-2.png'
+              alt='Study Buddy Course'
+              className='object-cover w-full'
+            />
           </div>
         </motion.div>
         {/* COURSE CARD */}
@@ -267,7 +279,7 @@ const Courses = () => {
           className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
         >
           {/* left */}
-          <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+          <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
               Business English
             </h2>
@@ -329,7 +341,11 @@ const Courses = () => {
           </div>
           {/* right */}
           <div className='flex-1 self-end mb-3'>
-            <img src='courses/courses-3.png' alt='Study Buddy Course' />
+            <img
+              src='courses/courses-3.png'
+              alt='Study Buddy Course'
+              className='object-cover w-full'
+            />
           </div>
         </motion.div>
         {/* COURSE CARD */}
@@ -345,7 +361,7 @@ const Courses = () => {
           className='flex flex-col-reverse lg:flex-row w-full px-7 py-8 bg-background'
         >
           {/* left */}
-          <div className='flex-1 lg:m-3 m-1 lg:mr-10 mr-0'>
+          <div className='flex-1 flex flex-col justify-between 2xl:py-6 lg:m-3 m-1 lg:mr-10 mr-0'>
             <h2 className='font-lora text-2xl font-semibold mb-3'>
               Business English
             </h2>
@@ -407,7 +423,11 @@ const Courses = () => {
           </div>
           {/* right */}
           <div className='flex-1 self-end mb-3'>
-            <img src='courses/courses-4.png' alt='Study Buddy Course' />
+            <img
+              src='courses/courses-4.png'
+              alt='Study Buddy Course'
+              className='object-cover w-full'
+            />
           </div>
         </motion.div>
       </div>

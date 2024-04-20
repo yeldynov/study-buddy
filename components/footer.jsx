@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='bg-[#DCDCDC] px-20'>
       {/* FIRST ROW */}
-      <div className='p-10 items-start flex flex-col lg:flex-row gap-5 justify-between'>
+      <div className='lg:p-10 p-0 py-10 items-start flex flex-col lg:flex-row gap-5 justify-around'>
         <div className='flex flex-col gap-7 self-center'>
           <img className='w-[110px]' src='/logo.png' alt='' />
           <p className='hidden lg:block'>
@@ -91,7 +91,7 @@ const Footer = () => {
             Записатися на урок
           </Link>
         </div>
-        <div className='flex flex-col gap-4 mt-3 text-[#4E4E4E]'>
+        <div className='flex flex-col items-center lg:items-start gap-4 mt-3 text-[#4E4E4E]'>
           <h5 className='hidden lg:block font-semibold mb-4 text-xl'>
             Контакти
           </h5>

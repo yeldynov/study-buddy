@@ -34,7 +34,7 @@ const FAQ = () => {
               тa хоче підвищити?
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -71,7 +71,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -95,7 +95,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -118,7 +118,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -141,7 +141,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -164,7 +164,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -187,7 +187,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>
@@ -210,7 +210,7 @@ const FAQ = () => {
               компанію, працювати з іноземними клієнтами?{' '}
             </span>
             <img
-              src='icons/icon_player_up-40px.svg'
+              src='icons/icon_player_down-40px.svg'
               className='h-8 w-8 transition-all duration-500 group-focus:-rotate-180'
             />
           </div>

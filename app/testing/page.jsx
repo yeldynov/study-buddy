@@ -7,7 +7,10 @@ const Testing = () => {
   return (
     <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
       {/* TOP */}
-      <Link href='/'>
+      <Link
+        target='_blank'
+        href='https://docs.google.com/forms/d/e/1FAIpQLSdTAM5FRGowwW3YQoiH6MBWxJEqHqOoYPUq17xj2QsElrbdbQ/viewform?usp=sf_link'
+      >
         <motion.h2
           initial='hidden'
           whileInView='visible'
