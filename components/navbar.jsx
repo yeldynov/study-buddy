@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header className='bg-white'>
       <nav
-        className='mx-auto flex max-w-7xl items-center justify-center p-6 bg-transparent lg:px-8'
+        className='mx-auto flex items-center justify-center p-6 bg-transparent lg:px-8'
         aria-label='Global'
       >
         <div className='flex lg:hidden'>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Courses = () => {
   return (
-    <div className='p-6 lg:p-20 flex flex-col'>
+    <div className='p-6 lg:p-20 2xl:px-40 flex flex-col'>
       <motion.h2
         initial='hidden'
         whileInView='visible'

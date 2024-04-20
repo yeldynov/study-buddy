@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Testimonials = () => {
   return (
-    <div className='p-6 lg:p-20 flex flex-col gap-[60px]'>
+    <div className='p-6 lg:p-20 2xl:px-40 flex flex-col gap-[60px]'>
       {/* TOP */}
       <motion.div
         initial={{ opacity: 0 }}

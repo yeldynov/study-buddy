@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const FAQ = () => {
   return (
-    <div className='p-0 lg:p-20 flex flex-col gap-10'>
+    <div className='p-0 lg:p-20 2xl:px-40 flex flex-col gap-10'>
       <motion.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
