@@ -52,7 +52,9 @@ export default function Navbar() {
           <Link
             href='/'
             className={`${
-              pathname === '/' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/'
+                ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
+                : ''
             } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6`}
           >
             Про Школу
@@ -60,7 +62,9 @@ export default function Navbar() {
           <Link
             href='/courses'
             className={`${
-              pathname === '/courses' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/courses'
+                ? 'bg-[#FCCF8D] hover:bg-[#FCCF8D] text-black '
+                : ''
             } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6`}
           >
             Курси
@@ -68,7 +72,9 @@ export default function Navbar() {
           <Link
             href='/testimonials'
             className={`${
-              pathname === '/testimonials' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/testimonials'
+                ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
+                : ''
             } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Відгуки студентів
@@ -76,7 +82,9 @@ export default function Navbar() {
           <Link
             href='/faq'
             className={`${
-              pathname === '/faq' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/faq'
+                ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
+                : ''
             } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Часті питання
@@ -84,7 +92,9 @@ export default function Navbar() {
           <Link
             href='/testing'
             className={`${
-              pathname === '/testing' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/testing'
+                ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
+                : ''
             } text-lg text-[#818181]  hover:bg-[#FEE9CAB3] p-2 px-3 rounded-lg active:bg-[#FBBF67] active:text-black leading-6 `}
           >
             Тестування
@@ -92,7 +102,9 @@ export default function Navbar() {
           <Link
             href='/subscribe'
             className={` ${
-              pathname === '/subscribe' ? 'bg-[#FCCF8D] text-black' : ''
+              pathname === '/subscribe'
+                ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
+                : ''
             } flex gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black `}
           >
             <span aria-hidden='true'>
@@ -178,7 +190,7 @@ export default function Navbar() {
                       href='/subscribe'
                       className={` ${
                         pathname === '/subscribe'
-                          ? 'bg-[#FCCF8D] text-black'
+                          ? 'bg-[#FCCF8D] text-black hover:bg-[#FCCF8D]'
                           : ''
                       } flex gap-2 h-6 p-5 items-center justify-center text-lg text-[#818181]  leading-6 border border-[#FAAF41] rounded-lg shadow-[2px_2px_0px_0px_rgba(255,184,0)] hover:bg-[#FEE9CAB3] active:bg-[#FAAF41] active:text-black `}
                     >
